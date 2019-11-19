@@ -111,7 +111,7 @@ if ( $wpg2_option['g2_validated'] == "Yes" ) {
 	add_action('wp_logout', 'g2_logout');
 
 	// Lightbox
-	if ($wpg2_option['wpg2_enablelightbox'])
+	if (isset($wpg2_option['wpg2_enablelightbox']))
 		add_action('wp_head', 'wpg2_lightboxheader');
 
 	// Add G2 Header Elements

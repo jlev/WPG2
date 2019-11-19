@@ -28,7 +28,7 @@ function wpg2_pathadmin() {
 
 //If we're setting options,
 	if ( isset($_POST['action']) ) {
-		if ($_POST['g2url']) {
+		if ( isset($_POST['g2url']) ) {
 			$ret = wpg2_validateg2url($_POST['g2url']);
 			if ($ret) {
 			// Return the Error
