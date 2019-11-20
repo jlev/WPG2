@@ -185,17 +185,17 @@ function wpg2_widget_albumtree_simpleviewer_control() {
 
 function wpg2_sidebar_widgets_init() {
 	// Check for the required plugin functions.
-	if ( !function_exists('register_sidebar_widget') )
+	if ( !function_exists('wp_register_sidebar_widget') )
 		return;
 		
-	register_sidebar_widget('WPG2 Sbar Block', 'wpg2_widget_sidebarblock_display','','WPG2');
-	register_widget_control('WPG2 Sbar Block', 'wpg2_widget_sidebarblock_control', 450, 90, 'WPG2');
-	register_sidebar_widget('WPG2 Sbar Grid', 'wpg2_widget_sidebargridblock_display','','WPG2');
-	register_widget_control('WPG2 Sbar Grid', 'wpg2_widget_sidebargridblock_control', 450, 90, 'WPG2');
-	register_sidebar_widget('WPG2 Album Tree', 'wpg2_widget_albumtree_display','','WPG2');
-	register_widget_control('WPG2 Album Tree', 'wpg2_widget_albumtree_control', 450, 90, 'WPG2');
-	register_sidebar_widget('WPG2 Album Tree (with SimpleViewer)', 'wpg2_widget_albumtree_simpleviewer_display','','WPG2');
-	register_widget_control('WPG2 Album Tree (with SimpleViewer)', 'wpg2_widget_albumtree_simpleviewer_control', 450, 90, 'WPG2');
+	wp_register_sidebar_widget('WPG2 Sbar Block', 'wpg2_widget_sidebarblock_display','','WPG2');
+	wp_register_widget_control('WPG2 Sbar Block', 'wpg2_widget_sidebarblock_control', 450, 90, 'WPG2');
+	wp_register_sidebar_widget('WPG2 Sbar Grid', 'wpg2_widget_sidebargridblock_display','','WPG2');
+	wp_register_widget_control('WPG2 Sbar Grid', 'wpg2_widget_sidebargridblock_control', 450, 90, 'WPG2');
+	wp_register_sidebar_widget('WPG2 Album Tree', 'wpg2_widget_albumtree_display','','WPG2');
+	wp_register_widget_control('WPG2 Album Tree', 'wpg2_widget_albumtree_control', 450, 90, 'WPG2');
+	wp_register_sidebar_widget('WPG2 Album Tree (with SimpleViewer)', 'wpg2_widget_albumtree_simpleviewer_display','','WPG2');
+	wp_register_widget_control('WPG2 Album Tree (with SimpleViewer)', 'wpg2_widget_albumtree_simpleviewer_control', 450, 90, 'WPG2');
 
 }
 
