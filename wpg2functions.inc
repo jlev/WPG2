@@ -654,6 +654,7 @@ function wpg2_simple_find_paths() {
 
 	$site_url = trailingslashit(get_option('siteurl'));
 	$g2url = $site_url.'gallery2';
+	$wpg2relpath = 'wpg2';
 	$ret = wpg2_validateg2url($g2url,$wpg2relpath);
 	if ($ret) {
 		$g2url = $site_url.'gallery';

@@ -63,6 +63,7 @@ function wpg2_pathadmin() {
 	//Get Current Gallery2 Plug-in Options
 	$wpg2_option = get_option('wpg2_options');
 	$wpg2_g2path = get_option('wpg2_g2paths');
+	$validate_err = null;
 
 	// Validate Paths To Help Pin Point Errors.
 	if (!$validate_err) {
