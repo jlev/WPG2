@@ -318,7 +318,7 @@ class G2EmbedDiscoveryUtilities {
      * @return array boolean success, string errormessage
      */
 
-    function verifyUri($Uri) {
+    public static function verifyUri($Uri) {
 	$Uri = trim($Uri);
 	if (empty($Uri)) {
 	    return array (false, "Verification Failed: the Uri is empty");

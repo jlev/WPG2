@@ -595,8 +595,9 @@ function wpg2_validateuri($wpg2uri) {
 	$slash = DIRECTORY_SEPARATOR;
 	$wpg2base = 'wp-content'.$slash.'plugins'.$slash.'wpg2';
 	$ret = null;
+
 	@include_once(ABSPATH . $wpg2base . $slash . 'g2embeddiscoveryutilities.class');
-	list ($success, $errorString) = G2EmbedDiscoveryUtilities::verifyUri($wpg2uri);
+	list ($success, $errorString) = array_pad(G2EmbedDiscoveryUtilities::verifyUri($wpg2uri), 2, '');
 	if (!$success) {
 		// Return Error
 		$ret =  $errorString;
